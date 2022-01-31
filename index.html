@@ -5,9 +5,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <title>
-            W EATON WEBSITE
+            Will Eaton
         </title>
         <link rel="stylesheet" href="style.css">
+
+        <!---Add fonts: -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,600;1,100;1,400;1,600&display=swap" rel="stylesheet">
+
+
     </head>
 
     <body>
@@ -59,7 +66,7 @@
             <!--Title bit with name/group-->
             <div class="intro-title">
                 <h1>Will Eaton</h1>
-                <p>Graduate Student in Computational and Theoretical Seismology <br> Princeton University</p>
+                <p> <br> Graduate Student in Computational and Theoretical Seismology <br> Princeton University</p>
             </div>
 
 
@@ -72,9 +79,9 @@
                     <!--Create unordered list-->
                     <ul>
                         <li> <a href=""> About</a> </li>
-                        <li> <a href=""> Projects</a> </li>
+                        <li> <a href=""> Research</a> </li>
+                        <li> <a href=""> Codes</a> </li>
                         <li> <a href=""> Contact</a> </li>
-                        <li> <a href=""> Email</a> </li>
 
                     </ul>
                 </div>
@@ -90,11 +97,11 @@
                 About me
             </h1>
             <p>
-                I am a graduate student in the Theoretical and Computational seismology at Princeton University. My research interests are in geophysical numerical modelling, predominantly in seismology and geodynamics. 
+                I am a graduate student in the Theoretical and Computational seismology at Princeton University, having completed an integrated Bachelors and Masters degree in Earth Sciences at the University of Oxford, UK. My research interests are in geophysical numerical modelling, predominantly in seismology and geodynamics. 
             </p>
 
             <p>
-                Outside of academia my heart lies in exploring nature, Liverpool FC and drinking tea.  
+                Outside of academia my heart lies in exploring nature, watching Liverpool FC and drinking tea.  
             </p>
 
             <p>
@@ -102,6 +109,29 @@
             </p>
 
         </section>
+
+
+        <section class="research-section">
+            <h1>
+                Research 
+            </h1>
+
+
+            <h2>
+                Modelling gravity with SPECFEM-X 
+            </h2>
+            <p> Modelling Earth's gravitational potential field is of significant interest for both geodynamic forward and inverse problems. The fact that potential fields, unlike other fields such as displacement, are non-zero outside of a body has provided a challenge for numerical modelling as infinite space can not be meshed. This has placed limitations on numerical modelling of geodynamic processes occurring over long timescales which require consideration of gravitational forces. 
+                SPECFEM-X, recently developed by Professor Hom Nath Gharti and Professor Jeroen Tromp, incorporates gravitational potential fields into <a href="https://geodynamics.org/cig/software/specfem3d_globe/"> SPECFEM-GLOBE</a> using a spectral infinite-element method to solve the Laplace equation in an unbounded spatial domain (see Gharti et al 2018). This refinement enables modelling of 3D quasi-static and elastic problems involving all the features of SPECFEM-GLOBE, but with the additional capability to accurately model spatio-temporal changes to the gravitational field. As such, SPECFEM-X provides a new toolkit to re-evaluate geophysical problems with realistic Earth models including gravitational potential, ellipticity, oceans, topography, bathymetry, rotation and 3D elastic heterogeneity. </p>
+
+            <h2>
+                Seismic scattering and wavefield diffusivity
+            </h2>
+            <p>Seismic-wave scattering is observed, to variable degrees of strength, on all planetary bodies for which seismic records exist (e.g. from the InSight and Apollo missions). Global-scale imaging using scattered wavefields is a relatively juvenile topic within seismology, but it is capable of resolving structure orders-of-magnitude smaller than is possible using traditional inversion methods such as tomography. Current scattering models and analytical methods are limited to two end-member phenomena: weak single- or multiple-scattering events (ballistic), or intense scattering such that the wavefield retains no phase information (diffuse). My research explores the existence of scattering behaviour intermediate between these end-members, and the dominant properties of heterogeneous media that facilitate a transition between them. 
+                We use novel analytical techniques such as multi-scale entropy and frequency-correlation analysis. Combining these newly-developed techniques with traditional analytical methods provides a promising framework for future exploration of scattered wavefields across ballistic, transitional, and diffuse regimes. </p>
+
+        </section>
+
+
 
 
 
