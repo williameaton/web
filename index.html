@@ -80,10 +80,10 @@
                 <div class="nav-links">
                     <!--Create unordered list-->
                     <ul>
-                        <li> <a href=""> About</a> </li>
-                        <li> <a href=""> Research</a> </li>
-                        <li> <a href=""> Codes</a> </li>
-                        <li> <a href=""> Contact</a> </li>
+                        <li> <a href=#about> About</a> </li>
+                        <li> <a href=#research> Research</a> </li>
+                        <li> <a href=#codes> Codes</a> </li>
+                        <li> <a href=#contact> Contact</a> </li>
 
                     </ul>
                 </div>
@@ -94,12 +94,15 @@
 
 
         <!--ABOUT SECTION -->
-        <section class="about-section">
+        <section class="about-section", id="about">
             <h1>
                 About me
             </h1>
             <p>
                 I am a graduate student in the Theoretical and Computational seismology at Princeton University, having completed an integrated Bachelors and Masters degree in Earth Sciences at the University of Oxford, UK. My research interests are in geophysical numerical modelling, predominantly in seismology and geodynamics. 
+            </p>
+
+            <p>During the pandemic, I co-founded the <a href="www.tethys-talks.com"> TETHYS</a> seminar series. This project grew out of a passion to increase the opportunities for young geoscientists to network and give scientific presentations within a more informal setting. This project ran for 3 series, with a total of 28 speakers from 12 different universities spanning North America, Europe and Australia. 
             </p>
 
             <p>
@@ -113,7 +116,7 @@
         </section>
 
 
-        <section class="research-section">
+        <section class="research-section", id="research">
             <h1>
                 Research 
             </h1>
@@ -122,19 +125,71 @@
             <h2>
                 Modelling gravity with SPECFEM-X 
             </h2>
-            <p> Modelling Earth's gravitational potential field is of significant interest for both geodynamic forward and inverse problems. The fact that potential fields, unlike other fields such as displacement, are non-zero outside of a body has provided a challenge for numerical modelling as infinite space can not be meshed. This has placed limitations on numerical modelling of geodynamic processes occurring over long timescales which require consideration of gravitational forces. 
-                SPECFEM-X, recently developed by Professor Hom Nath Gharti and Professor Jeroen Tromp, incorporates gravitational potential fields into <a href="https://geodynamics.org/cig/software/specfem3d_globe/"> SPECFEM-GLOBE</a> using a spectral infinite-element method to solve the Laplace equation in an unbounded spatial domain (see Gharti et al 2018). This refinement enables modelling of 3D quasi-static and elastic problems involving all the features of SPECFEM-GLOBE, but with the additional capability to accurately model spatio-temporal changes to the gravitational field. As such, SPECFEM-X provides a new toolkit to re-evaluate geophysical problems with realistic Earth models including gravitational potential, ellipticity, oceans, topography, bathymetry, rotation and 3D elastic heterogeneity. </p>
+            <h3>
+                Supervised by Jeroen Tromp (Princeton University), in collaboration with Hom Nath Gharti (Queen's University)
+            </h3>
+            <p> Modelling Earth's gravitational potential field is of significant interest for both geodynamic forward and inverse problems. The fact that potential fields, unlike other fields such as displacement, are non-zero outside of a body has provided a challenge for numerical modelling as infinite space can not be meshed. This has placed limitations on numerical modelling of geodynamic processes occurring over long timescales which require consideration of gravitational forces. <br> 
+                SPECFEM-X, recently developed by Professor Hom Nath Gharti and Professor Jeroen Tromp, incorporates gravitational potential fields into <a href="https://geodynamics.org/cig/software/specfem3d_globe/"> SPECFEM-GLOBE</a> using a spectral infinite-element method to solve the Laplace equation in an unbounded spatial domain (see Gharti et al 2018). This refinement enables modelling of 3D quasi-static and elastic problems involving all the features of SPECFEM-GLOBE, but with the additional capability to accurately model spatio-temporal changes to the gravitational field. 
+                <br> My current research involves benchmarking SPECFEM-X and utilising this new toolkit to simulate Earth's nutations and wobbles, as well as visco-elastic modelling of sea-level change. </p>
 
             <h2>
                 Seismic scattering and wavefield diffusivity
             </h2>
+            <h3>
+                Supervised by Tarje Nissen-Meyer (University of Oxford)
+            </h3>
             <p>Seismic-wave scattering is observed, to variable degrees of strength, on all planetary bodies for which seismic records exist (e.g. from the InSight and Apollo missions). Global-scale imaging using scattered wavefields is a relatively juvenile topic within seismology, but it is capable of resolving structure orders-of-magnitude smaller than is possible using traditional inversion methods such as tomography. Current scattering models and analytical methods are limited to two end-member phenomena: weak single- or multiple-scattering events (ballistic), or intense scattering such that the wavefield retains no phase information (diffuse). My research explores the existence of scattering behaviour intermediate between these end-members, and the dominant properties of heterogeneous media that facilitate a transition between them. 
                 We use novel analytical techniques such as multi-scale entropy and frequency-correlation analysis. Combining these newly-developed techniques with traditional analytical methods provides a promising framework for future exploration of scattered wavefields across ballistic, transitional, and diffuse regimes. </p>
 
         </section>
 
 
+        <!-- Codes Section-->
+        <section class="codes-section", id="codes">
+            <h1>
+                Codes and Software
+            </h1>
 
+            <p>Pretty much any useful codes I have written can be found on my <a href="https://github.com/williameaton"> Github </a>. It's also where this website is stored and hosted! I am trying to maintain a philosophy of publishing all my codes, however complete. This means some of the repositories are still under construction, so please contact me with any questions! Below is an outline of some projects:</p>
+        </section>
+        
+
+
+        <!-- Contact Section-->
+        <section class="contact-section", id="contact">
+            <h1>Get in touch!</h1>
+
+            <p>Please feel free to get in touch about anything on my website, or any queries you may have!
+                You can email me at <a href="mailto:weaton@princeton.edu">weaton@princeton.edu</a> or connect with me on any of the platforms below: 
+            </p>
+
+
+            <div class="ext-links">
+                <ul>
+
+                    <li> <a href="https://github.com/williameaton"> 
+                        <img alt="GithubWE" src="images/4x/github.png" width="50" height="50">
+                        </a> 
+                    </li>
+                    
+
+                    <li> <a href="https://www.linkedin.com/in/will-eaton-3559288b/"> 
+                        <img alt="LinkedinWE" src="images/4x/linkedin.png" width="50" height="50">
+                        </a> 
+                    </li>
+                    <li> <a href="https://twitter.com/willeaton101"> 
+                        <img alt="TwitterWE" src="images/4x/twitter.png" width="50" height="50">
+                        </a> 
+                    </li>
+
+                </ul>
+            </div>
+
+
+
+
+        </section>
+        
 
 
 

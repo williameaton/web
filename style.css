@@ -176,12 +176,14 @@ NOTE I CHANGED THE profile pic div to a bullet list with the same format as the 
 /*Research Section*/
 .research-section{
 min-height: 70vh;
-    width: 100%;
-    background-color: darkslategray;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    color: white;
+width: 100%;
+background-color: darkslategray;
+background-size: cover;
+background-position: center;
+position: relative;
+color: white;
+padding-bottom: 40px;
+
 }
 
 
@@ -204,8 +206,64 @@ min-height: 70vh;
 
 }
 
+.research-section h3{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 60px;
+    padding-right: 60px;
+
+    text-align: left;
+    font-size: 20px;
+    font-style: bold;
+
+}
+
 .research-section p{
     text-align: left;
     padding: 0px 60px 10px 60px ;
     font-size: 20px;
+}
+
+
+
+/*Codes section*/
+
+.codes-section{
+    min-height: 50vh;
+    width: 100%;
+    background-color:white;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding-bottom: 40px;
+}
+
+
+
+/* Contact section*/
+
+
+.contact-section{
+    min-height: 40vh;
+    width: 100%;
+    background-color:cadetblue;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.contact-section h1{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    font-size: 40px;
+    color: darkslategray;
+}
+
+.contact-section p{
+    text-align: left;
+    padding: 0px 60px 10px 60px ;
+    font-size: 20px;
+    
 }
