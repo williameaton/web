@@ -129,7 +129,7 @@
                 Supervised by Jeroen Tromp (Princeton University), in collaboration with Hom Nath Gharti (Queen's University)
             </h3>
             <p> Modelling Earth's gravitational potential field is of significant interest for both geodynamic forward and inverse problems. The fact that potential fields, unlike other fields such as displacement, are non-zero outside of a body has provided a challenge for numerical modelling as infinite space can not be meshed. This has placed limitations on numerical modelling of geodynamic processes occurring over long timescales which require consideration of gravitational forces. <br> 
-                SPECFEM-X, recently developed by Professor Hom Nath Gharti and Professor Jeroen Tromp, incorporates gravitational potential fields into <a href="https://geodynamics.org/cig/software/specfem3d_globe/"> SPECFEM-GLOBE</a> using a spectral infinite-element method to solve the Laplace equation in an unbounded spatial domain (see Gharti et al 2018). This refinement enables modelling of 3D quasi-static and elastic problems involving all the features of SPECFEM-GLOBE, but with the additional capability to accurately model spatio-temporal changes to the gravitational field. 
+                SPECFEM-X, recently developed by Hom Nath Gharti and Jeroen Tromp, incorporates gravitational potential fields into <a href="https://geodynamics.org/cig/software/specfem3d_globe/"> SPECFEM-GLOBE</a> using a spectral infinite-element method to solve the Laplace equation in an unbounded spatial domain (see Gharti et al 2018). This refinement enables modelling of 3D quasi-static and elastic problems involving all the features of SPECFEM-GLOBE, but with the additional capability to accurately model spatio-temporal changes to the gravitational field. 
                 <br> My current research involves benchmarking SPECFEM-X and utilising this new toolkit to simulate Earth's nutations and wobbles, as well as visco-elastic modelling of sea-level change. </p>
 
             <h2>
@@ -150,7 +150,63 @@
                 Codes and Software
             </h1>
 
-            <p>Pretty much any useful codes I have written can be found on my <a href="https://github.com/williameaton"> Github </a>. It's also where this website is stored and hosted! I am trying to maintain a philosophy of publishing all my codes, however complete. This means some of the repositories are still under construction, so please contact me with any questions! Below is an outline of some projects:</p>
+            <p>Pretty much any useful codes I have written can be found on my <a href="https://github.com/williameaton"> Github</a>. It's also where this website is stored and hosted! I am trying to maintain a philosophy of publishing all my codes, however (in)complete. This means some of the repositories are still under construction, so please contact me with any questions! Below is an outline of some projects/scripts you may like to look at:</p>
+        
+        <!--Add in dynamic codes section:-->
+        <div class="row">
+            <div class="buffer-col"></div>
+            <div class="left-col">
+                <div class="title-col" onclick="openTab('b1');" style="background:white;">AxiSEM-Blobs</div>
+                <div class="title-col" onclick="openTab('b2');" style="background:white;">Correlation-Coefficients</div>
+                <div class="title-col" onclick="openTab('b3');" style="background:white;">TRModes</div>
+
+            </div>
+
+            <div id="b1" class="right-col" style="display:none;">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">    X</span>
+                <h2>AxiSEM-Blobs</h2>
+                <img alt="AxiSEM-Blobs" src="images/axisem_blob.png" width=60%>
+
+                <p>AxiSEM-Blobs is a series of python scripts used to inject 3D spherical 'blobs' into 3D models for <a href="https://github.com/kuangdai/AxiSEM-3D">AxiSEM-3D</a>. 
+                </p>
+                <p>
+                   The current implimentation works only for cartesian 3D models but I am currently developing an equivalent version for spherical models.  
+                </p>    
+            </div>
+
+            <div id="b2" class="right-col" style="display:none; ">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">    X</span>
+                <h2>Correlation-Coefficients</h2>
+                <img alt="Correlation-Coefficients" src="images/4x/CC.png" width=40%>
+
+                <p>This repo calculates 'Correlation Coefficient' matrices following the method described in Liu and Ben-Zion (2016) utilised in the study of planetary coda.</p>
+            </div>
+
+            <div id="b3" class="right-col" style="display:none; ">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">    X</span>
+                <h2>TRModes</h2>
+                
+                <video controls="controls" width=60%  name="TRModes">
+                    <source src="images/TRModes.mp4">
+                  </video>
+
+
+                <p> TRModes is a toolkit for calculating and visualising Toroidal and Radial normal modes of an arbitrary, spherically-symmetric sphere (e.g. Earth). It harnesses PyVista and Paraview to allow interactive 3D animations of an oscillatory body. </p>
+
+                <p>This was developed in collaboration with Huda Al Alawi, Page Dabney and Terry Schuh. TRModes is still under construction, with some known bugs, with goals to impliment a GUI and Spheroidal modes in the future. </p>
+            </div>
+
+
+        </div> 
+
+
+
+        
+        
+        
+        
+        
+        
         </section>
         
 
@@ -186,13 +242,37 @@
             </div>
 
 
-
-
         </section>
         
 
 
 
+
+
+
+
+    <script>
+    // Hide all elements with class="containerTab", except for the one that matches the clickable grid column
+    function openTab(tabName) {
+      var i, x;
+      x = document.getElementsByClassName("right-col");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      document.getElementById(tabName).style.display = "block";
+    }
+    </script>
+    
+
+
+
     </body>
 
+
+
+    <footer>
+        <p>© Will Eaton     |     Last Updated: Jan 31st 2022</p>
+    </footer>
+
 </html>
+
