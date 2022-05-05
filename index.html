@@ -139,7 +139,9 @@
                 Supervised by Tarje Nissen-Meyer (University of Oxford)
             </h3>
             <p>Seismic-wave scattering is observed, to variable degrees of strength, on all planetary bodies for which seismic records exist (e.g. from the InSight and Apollo missions). Global-scale imaging using scattered wavefields is a relatively juvenile topic within seismology, but it is capable of resolving structure orders-of-magnitude smaller than is possible using traditional inversion methods such as tomography. Current scattering models and analytical methods are limited to two end-member phenomena: weak single- or multiple-scattering events (ballistic), or intense scattering such that the wavefield retains no phase information (diffuse). My research explores the existence of scattering behaviour intermediate between these end-members, and the dominant properties of heterogeneous media that facilitate a transition between them. 
-                We use novel analytical techniques such as multi-scale entropy and frequency-correlation analysis. Combining these newly-developed techniques with traditional analytical methods provides a promising framework for future exploration of scattered wavefields across ballistic, transitional, and diffuse regimes. </p>
+                We use novel analytical techniques such as multi-scale entropy and frequency-correlation analysis. Combining these newly-developed techniques with traditional analytical methods provides a promising framework for future exploration of scattered wavefields across ballistic, transitional, and diffuse regimes.
+                The analytical methods developed are also being used in consideration of nuclear bomb test monitoring.
+            </p>
 
         </section>
 
@@ -156,7 +158,7 @@
         <div class="row">
             <div class="buffer-col"></div>
             <div class="left-col">
-                <div class="title-col" onclick="openTab('b1');" style="background:white;">AxiSEM-Blobs</div>
+                <div class="title-col" onclick="openTab('b1');" style="background:white;">AxiSEM-Shapes</div>
                 <div class="title-col" onclick="openTab('b2');" style="background:white;">Correlation-Coefficients</div>
                 <div class="title-col" onclick="openTab('b3');" style="background:white;">TRModes</div>
 
@@ -164,13 +166,14 @@
 
             <div id="b1" class="right-col" style="display:none;">
                 <span onclick="this.parentElement.style.display='none'" class="closebtn">    X</span>
-                <h2> <a href="https://github.com/williameaton/axisem3d-blobs">AxiSEM-Blobs</a></h2>
-                <img alt="AxiSEM-Blobs" src="images/axisem_blob.png" width=60%>
+                <h2> <a href="https://github.com/williameaton/axisem3d-shapes">AxiSEM-Shapes</a></h2>
+                <img alt="AxiSEM-Shapes" src="images/axisem-shapes.png" width=60%>
 
-                <p>AxiSEM-Blobs is a series of python scripts used to inject 3D spherical 'blobs' into 3D models for <a href="https://github.com/kuangdai/AxiSEM-3D">AxiSEM-3D</a>. 
+                <p>AxiSEM-Shapes is a series of python scripts used to inject 3D shapes such as cylinders, ellipsoids and slabs into 3D models for <a href="https://github.com/kuangdai/AxiSEM-3D">AxiSEM-3D</a>. Examples for use can be found as part of the AxiSEM3D package.
                 </p>
                 <p>
-                   The current implimentation works only for cartesian 3D models but I am currently developing an equivalent version for spherical models.  
+                   The newest implementation works for both cartesian and global (spherical/ellipsoidal) simulations, though there are
+                    some bugs for high-latitude locations which need fixing.
                 </p>    
             </div>
 
@@ -271,7 +274,7 @@
 
 
     <footer>
-        <p>© Will Eaton     |     Last Updated: Jan 31st 2022</p>
+        <p>© Will Eaton     |     Last Updated: May 5th 2022</p>
     </footer>
 
 </html>
