@@ -31,7 +31,7 @@
                         </a> 
                     </li>
                     
-                    <li> <a href="files/CV_WillEaton.pdf" download> 
+                    <li> <a href="files/CV_Nov18.pdf" download> 
                         <img alt="CVWE" src="images/4x/cv.png" width="50" height="50">
                         </a> 
                     </li>
@@ -159,8 +159,10 @@
             <div class="buffer-col"></div>
             <div class="left-col">
                 <div class="title-col" onclick="openTab('b1');" style="background:white;">AxiSEM-Shapes</div>
-                <div class="title-col" onclick="openTab('b2');" style="background:white;">Correlation-Coefficients</div>
-                <div class="title-col" onclick="openTab('b3');" style="background:white;">TRModes</div>
+                <div class="title-col" onclick="openTab('b2');" style="background:white;">Correlation Coefficients</div>
+                <div class="title-col" onclick="openTab('b3');" style="background:white;">SPECFEM-C</div>
+                <div class="title-col" onclick="openTab('b4');" style="background:white;">SPECFEM Website</div>
+                <div class="title-col" onclick="openTab('b5');" style="background:white;">TRModes</div>
 
             </div>
 
@@ -185,7 +187,28 @@
                 <p>This repo calculates 'Correlation Coefficient' matrices following the method described in Liu and Ben-Zion (2016), which I utilise in the study of planetary coda.</p>
             </div>
 
+
             <div id="b3" class="right-col" style="display:none; ">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">    X</span>
+                <h2><a href="https://github.com/williameaton/SPECFEMX">SPECFEM-C</a></h2>
+                <img alt="SPECFEM-C" src="images/4x/SPECFEMX_mesh.png" width=40%>
+
+                <p> SPECFEM-C is a project under development to incorporate a rate-dependent formulation of the Sea Level equations into SPECFEM, utilising the spectral-infinite-element method. The goal is to make the package open-source for sea-level change related to Glacio-isostatic adjustment. The above figure shows an exemplar global Spectral-infinite-element mesh used in this code.</p>
+            </div>
+
+
+            <div id="b4" class="right-col" style="display:none; ">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">    X</span>
+                <h2><a href="www.specfem.org">SPECFEM Website</a></h2>
+
+                <p> Following a recent meeting of SPECFEM developers in Toronto, October 2022, a dedicated website has been setup for the family of SPECFEM codes. Details on the theory of SPECFEM, documentation, training resources and publications are all being added. Included within the <a href="https://github.com/SPECFEM/specfem.github.io">host repository</a> are resources to automatically download citations from Google Scholar for a specific user. Please get in contact if you are interested in using these scripts! We welcome and encourage any contributions to the SPECFEM website or code family. </p>
+            </div>
+
+
+
+
+
+            <div id="b5" class="right-col" style="display:none; ">
                 <span onclick="this.parentElement.style.display='none'" class="closebtn">    X</span>
                 <h2><a href="https://github.com/williameaton/TRModes">TRModes</a></h2>
                 
@@ -274,7 +297,7 @@
 
 
     <footer>
-        <p>© Will Eaton     |     Last Updated: May 5th 2022</p>
+        <p>© Will Eaton     |     Last Updated: Nov 18th 2022</p>
     </footer>
 
 </html>
