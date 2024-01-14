@@ -7,11 +7,40 @@
 .title-section{
     min-height: 100vh;
     width: 100%;
-    background-color: cadetblue;
+    background-color: rgb(169, 158, 158);
     background-size: cover;
     background-position: center;
     position: relative;
 }
+
+
+
+/* Links in supervised by... text of Research*/
+a.personlink{
+    text-align: left;
+    font-size: 19px;
+    color: rgb(253, 243, 243);
+    text-decoration: none;
+}
+
+
+/* Links in main text of Research */
+ a.textlink{
+    text-align: left;
+    font-size: 20px;
+    color: rgb(78, 78, 78);
+    text-decoration: none;
+}
+
+
+/* Links in main text of Research */
+a.codelinks{
+    text-align: left;
+    font-size: 22px;
+    color: rgb(78, 78, 78);
+    text-decoration: none;
+}
+
 
 
 /*EXTERNAL LINKS BAR: */
@@ -64,11 +93,11 @@ nav{
 
  /*Now editing the individual links in nav */
 .nav-links ul li a{
-    color: darkslategray;
+    color: rgb(78, 78, 78);
     text-decoration: none;
     font-size: 20px;
 
-    border: 1.5px cadetblue solid;
+    border: none;
     padding: 14px;
     
 }
@@ -79,12 +108,12 @@ nav{
     display: block;
     margin: auto;
     transition: 0.2s;
-    border: 1.5px cadetblue solid;
+    border: 1.5px rgb(169, 158, 158) solid;
  
 }
 
 .nav-links ul li:hover::after{
-    border: 1.5px darkslategray solid;
+    border: 0.5px rgb(253, 243, 243) solid;
     border-radius: 5%;
 } 
 
@@ -107,7 +136,7 @@ NOTE I CHANGED THE profile pic div to a bullet list with the same format as the 
 /* Intro title*/
 .intro-title{
     width: 70%;
-    color:darkslategray;
+    color:rgb(78, 78, 78);
     position: absolute;
     top: 50%; 
     left:50%;
@@ -116,14 +145,15 @@ NOTE I CHANGED THE profile pic div to a bullet list with the same format as the 
 }
 
 .intro-title h1{
-    padding-top: 180px;
+    padding-top: 220px;
     font-size: 40px;
 }
 
 .intro-title p{
     font-size: 20px;
-    color: white;
+    color: rgb(253, 243, 243);
     margin: 10  0 0;
+    padding-top: 3px;
 }
 
 .intro-title p2{
@@ -141,22 +171,19 @@ NOTE I CHANGED THE profile pic div to a bullet list with the same format as the 
     margin: auto;
     text-align: center;
     padding-top: 20px ;
-    color: darkslategray;
+    color: rgb(78, 78, 78);
 }
 
-
-
-
-/* About Section*/
 
 .about-section{
     min-height: 50vh;
     width: 100%;
-    background-color:white;
+    background-color:rgb(253, 243, 243);
     background-size: cover;
     background-position: center;
     position: relative;
     padding-bottom: 40px;
+    color: rgb(78, 78, 78)
 }
 
 .about-section h1{
@@ -178,11 +205,11 @@ NOTE I CHANGED THE profile pic div to a bullet list with the same format as the 
 .research-section{
 min-height: 70vh;
 width: 100%;
-background-color: darkslategray;
+background-color: rgb(169, 158, 158);
 background-size: cover;
 background-position: center;
 position: relative;
-color: white;
+color: rgb(78, 78, 78);
 padding-bottom: 40px;
 
 }
@@ -193,37 +220,41 @@ padding-bottom: 40px;
     padding-bottom: 40px;
     text-align: center;
     font-size: 40px;
+    color: rgb(78, 78, 78);
+
 }
 
 .research-section h2{
     padding-top: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
     padding-left: 7%;
     padding-right: 7%;
 
     text-align: left;
     font-size: 25px;
     font-style: italic;
-
 }
 
 .research-section h3{
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 2px;
+    padding-bottom: 15px;
     padding-left: 7%;
     padding-right: 7%;
 
     text-align: left;
-    font-size: 20px;
-    font-style: bold;
-
+    font-size: 19px;
+    font-style: italic;
+    color: rgb(253, 243, 243);
 }
 
 .research-section p{
     text-align: left;
     padding: 0px 7% 10px 7% ;
     font-size: 20px;
+    color: rgb(78, 78, 78);
+
 }
+
 
 
 
@@ -232,12 +263,12 @@ padding-bottom: 40px;
 .codes-section{
     min-height: 40vh;
     width: 100%;
-    background-color:white;
+    background-color:rgb(253, 243, 243);
     background-size: cover;
     background-position: center;
     position: relative;
     padding-bottom: 40px;
-    color: darkslategray;
+    color: rgb(78, 78, 78);
 }
 
 .codes-section h1{
@@ -260,7 +291,7 @@ padding-bottom: 40px;
     width: 7%;
     float:left;
     min-height: 40vh;
-    background-color:white;
+    background-color:rgb(253, 243, 243);
   }
 
   .left-col{
@@ -330,7 +361,7 @@ video {
 .contact-section{
     min-height: 40vh;
     width: 100%;
-    background-color:cadetblue;
+    background-color:rgb(169, 158, 158);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -342,13 +373,13 @@ video {
     padding-bottom: 40px;
     text-align: center;
     font-size: 40px;
-    color: darkslategray;
+    color: rgb(78, 78, 78);
 }
 
 .contact-section p{
     text-align: left;
     padding-left: 7% ;
-
+    color: rgb(78, 78, 78); 
     font-size: 20px;
     
 }
@@ -356,5 +387,6 @@ video {
 
 footer{
     text-align: center;
-    background-color:cadetblue;
+    background-color:rgb(169, 158, 158);
+    color: rgb(78, 78, 78);
 }
