@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google" value="notranslate">
+    <title>Kitware Glance</title>
+    <meta name="description" content="Data Viewer in a browser">
+    <link inline rel="icon" type="image/png" href="ParaView.png">
+    <style type="text/css">
+    html {
+      overflow: hidden !important;
+      width: 100%;
+    }
+    body {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      overflow-y: scroll;
+    }
+    </style>
+    
+    
+    <script inline type="text/javascript" src="version.js"></script>
+    
+      <script
+         inline 
+        type="text/javascript"
+        src="runtime.6234dd7fbdd0d13511ef.js"
+      ></script>
+    
+      <script
+         inline 
+        type="text/javascript"
+        src="vendors.330762dd7051eb309de0.js"
+      ></script>
+    
+      <script
+         inline 
+        type="text/javascript"
+        src="glance.23221d38e8f354d8b30e.js"
+      ></script>
+    
+      <script
+        
+        type="text/javascript"
+        src="glance-external-ITKReader.f6adb464883567c0155d.js"
+      ></script>
+    
+      <script
+        
+        type="text/javascript"
+        src="glance-external-Workbox.f502707ab4fa90c981e0.js"
+      ></script>
+    
+  </head>
+  <body>
+    <div id="root-container"></div>
+    <script type="text/javascript">
+      const container = document.querySelector('#root-container');
+      const glanceInstance = Glance.createViewer(container);
+      glanceInstance.processURLArgs();
+    </script>
+  </body>
+</html>
