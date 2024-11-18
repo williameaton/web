@@ -4,14 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preloaded Glance App</title>
+    <style>
+        /* Ensure the body and html elements fill the full viewport */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        /* Set iframe to take up the full height and width of the screen */
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
 </head>
-<body style="margin: 0; overflow: hidden;">
+<body>
     <!-- Embed the Glance App -->
     <iframe 
-        src="https://williameaton.github.io/glance/index.html?name=example.glance&url=https://williameaton.github.io/glance/PEGS/example.glance" 
-        width="100%" 
-        height="100%" 
-        frameborder="0" 
+        src="https://williameaton.github.io/glance/index.html?name=example.glance&url=https://williameaton.github.io/glance/PEGS/example.glance&hide_ui=true" 
         allowfullscreen>
     </iframe>
 </body>
