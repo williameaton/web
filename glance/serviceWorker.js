@@ -100,7 +100,7 @@ define("./serviceWorker.js",['./workbox-4e9c5f4e'], (function (workbox) { 'use s
     "url": "glance-external-Workbox.f502707ab4fa90c981e0.js",
     "revision": null
   }, {
-    "url": "glance.23221d38e8f354d8b30e.js",
+    "url": "glance.81414931c5901eb94033.js",
     "revision": null
   }, {
     "url": "itk/FloatTypes.js",

@@ -1,0 +1,96 @@
+<VTKFile type="UnstructuredGrid" version="1.0" byte_order="LittleEndian" header_type="UInt64">
+  <UnstructuredGrid>
+    <Piece NumberOfPoints="7" NumberOfCells="8">
+      <PointData Scalars="rho_kernel">
+        <DataArray type="Float32" Name="inter_rho1" format="ascii" RangeMin="-1.6929124631137536e-24" RangeMax="-1.3407176726725872e-25">
+          -1.117479e-24 -1.6929125e-24 -5.8147366e-25 -1.3407177e-25 -9.193887e-25 -5.725116e-25
+          -2.7902242e-25
+        </DataArray>
+        <DataArray type="Float32" Name="inter_rho2" format="ascii" RangeMin="-1.751975267948556e-25" RangeMax="-1.370205663088298e-25">
+          -1.5956665e-25 -1.6289348e-25 -1.5641104e-25 -1.5723531e-25 -1.3702057e-25 -1.5870947e-25
+          -1.7519753e-25
+        </DataArray>
+        <DataArray type="Float32" Name="inter_rho3" format="ascii" RangeMin="-5.222817558172575e-26" RangeMax="-4.9626885176344085e-26">
+          -5.1025727e-26 -5.2228176e-26 -4.9863294e-26 -4.9626885e-26 -5.1326893e-26 -5.208003e-26
+          -5.027409e-26
+        </DataArray>
+        <DataArray type="Float32" Name="inter_rho4" format="ascii" RangeMin="9.432276208263622e-29" RangeMax="1.0660640947177985e-28">
+          9.9417936e-29 9.515103e-29 1.0330736e-28 1.0167508e-28 1.0660641e-28 9.553722e-29
+          9.432276e-29
+        </DataArray>
+        <DataArray type="Float32" Name="inter_rho5" format="ascii" RangeMin="7.510307107325889e-27" RangeMax="1.2652123287599843e-26">
+          7.779101e-27 1.1991925e-26 1.03835196e-26 8.421311e-27 1.2652123e-26 9.710577e-27
+          7.510307e-27
+        </DataArray>
+        <DataArray type="Float32" Name="alpha_kernel" format="ascii" RangeMin="-9.970029594688431e-24" RangeMax="-6.808107848050709e-24">
+          -9.9700296e-24 -6.808108e-24 -7.805617e-24 -7.5456565e-24 -7.4491354e-24 -7.921661e-24
+          -7.9181685e-24
+        </DataArray>
+        <DataArray type="Float32" Name="beta_kernel" format="ascii" RangeMin="-1.3459683604400222e-23" RangeMax="-9.399997126853917e-24">
+          -1.3459684e-23 -9.399997e-24 -1.0639861e-23 -1.17895215e-23 -1.036091e-23 -1.0531349e-23
+          -1.1088053e-23
+        </DataArray>
+        <DataArray type="Float32" Name="kappa_kernel" format="ascii" RangeMin="-3.0282902870150932e-24" RangeMax="-2.0678903946624146e-24">
+          -3.0282903e-24 -2.0678904e-24 -2.3708731e-24 -2.2919129e-24 -2.265594e-24 -2.40612e-24
+          -2.4051661e-24
+        </DataArray>
+        <DataArray type="Float32" Name="mu_kernel" format="ascii" RangeMin="-8.686566312529233e-24" RangeMax="-6.036162487220351e-24">
+          -8.686566e-24 -6.0361625e-24 -6.851866e-24 -7.375677e-24 -6.639429e-24 -6.820385e-24
+          -7.097945e-24
+        </DataArray>
+        <DataArray type="Float32" Name="rho_kernel" format="ascii" RangeMin="-1.3035049245450614e-23" RangeMax="-9.999999998199587e-24">
+          -1.3035049e-23 -1e-23 -1e-23 -1e-23 -1e-23 -1e-23
+          -1e-23
+        </DataArray>
+        <DataArray type="Float32" Name="rho_not_prime" format="ascii" RangeMin="-1.895947116316822e-24" RangeMax="-3.3241099710293518e-25">
+          -1.3201928e-24 -1.8959471e-24 -7.772611e-25 -3.32411e-25 -1.0949775e-24 -7.7349503e-25
+          -4.968893e-25
+        </DataArray>
+      </PointData>
+      <CellData>
+      </CellData>
+      <Points>
+        <DataArray type="Float32" Name="Points" NumberOfComponents="3" format="ascii" RangeMin="0.9650759230068324" RangeMax="0.9658741628076846">
+          -0.49245697 0.5202754 0.6472474 -0.49271727 0.51960194 0.6475895
+          -0.49207354 0.5204176 0.6474242 -0.49219424 0.5209509 0.646902
+          -0.49266386 0.520494 0.6475193 -0.49284416 0.52013123 0.647068
+          -0.4922567 0.5200638 0.64698416
+          <InformationKey name="L2_NORM_FINITE_RANGE" location="vtkDataArray" length="2">
+            <Value index="0">
+              0.96507592301
+            </Value>
+            <Value index="1">
+              0.96587416281
+            </Value>
+          </InformationKey>
+          <InformationKey name="L2_NORM_RANGE" location="vtkDataArray" length="2">
+            <Value index="0">
+              0.96507592301
+            </Value>
+            <Value index="1">
+              0.96587416281
+            </Value>
+          </InformationKey>
+        </DataArray>
+      </Points>
+      <Cells>
+        <DataArray type="Int32" Name="connectivity" format="ascii" RangeMin="0" RangeMax="6">
+          2 1 4 0 4 3
+          2 0 5 4 1 0
+          5 3 4 0 2 6
+          1 0 2 3 6 0
+          6 5 1 0 5 6
+          3 0
+        </DataArray>
+        <DataArray type="Int32" Name="offsets" format="ascii" RangeMin="4" RangeMax="32">
+          4 8 12 16 20 24
+          28 32
+        </DataArray>
+        <DataArray type="UInt8" Name="types" format="ascii" RangeMin="10" RangeMax="10">
+          10 10 10 10 10 10
+          10 10
+        </DataArray>
+      </Cells>
+    </Piece>
+  </UnstructuredGrid>
+</VTKFile>
